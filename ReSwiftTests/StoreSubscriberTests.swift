@@ -263,7 +263,7 @@ struct TestComplexAppState: StateType {
     var otherState: OtherState?
 }
 
-struct OtherState {
+struct OtherState: Codable {
     var name: String?
     var age: Int?
 }

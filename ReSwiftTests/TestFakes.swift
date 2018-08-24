@@ -39,7 +39,7 @@ struct TestNonEquatable: StateType {
     }
 }
 
-struct NonEquatable {
+struct NonEquatable: Codable {
     var testValue: String
 
     init() {
@@ -96,6 +96,7 @@ struct SetCustomSubstateAction: Action {
 }
 
 struct SetNonEquatableAction: Action {
+
     var value: NonEquatable
     static let type = "SetNonEquatableAction"
 
